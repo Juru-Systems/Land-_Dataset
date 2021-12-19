@@ -1,7 +1,7 @@
 <annotation>
 	<folder>land_used</folder>
-	<filename>land_used128.jpg</filename>
-	<path>C:\Users\Cavani\Desktop\labeling\Train_data\land_used\land_used128.jpg</path>
+	<filename>land_used131.jpg</filename>
+	<path>C:\Users\Cavani\Desktop\labeling\Train_data\land_used\land_used131.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -12,15 +12,63 @@
 	</size>
 	<segmented>0</segmented>
 	<object>
+		<name>Person</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>57</xmin>
+			<ymin>14</ymin>
+			<xmax>86</xmax>
+			<ymax>134</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Person</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>98</xmin>
+			<ymin>16</ymin>
+			<xmax>120</xmax>
+			<ymax>84</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Person</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>125</xmin>
+			<ymin>1</ymin>
+			<xmax>136</xmax>
+			<ymax>45</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Person</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1</xmin>
+			<ymin>1</ymin>
+			<xmax>13</xmax>
+			<ymax>40</ymax>
+		</bndbox>
+	</object>
+	<object>
 		<name>Cultivated</name>
 		<pose>Unspecified</pose>
 		<truncated>1</truncated>
 		<difficult>0</difficult>
 		<bndbox>
 			<xmin>1</xmin>
-			<ymin>29</ymin>
+			<ymin>45</ymin>
 			<xmax>150</xmax>
-			<ymax>150</ymax>
+			<ymax>148</ymax>
 		</bndbox>
 	</object>
 </annotation>

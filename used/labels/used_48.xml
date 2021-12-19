@@ -1,7 +1,7 @@
 <annotation>
 	<folder>land_used</folder>
-	<filename>land_used142.jpg</filename>
-	<path>C:\Users\Cavani\Desktop\labeling\Train_data\land_used\land_used142.jpg</path>
+	<filename>land_used148.jpg</filename>
+	<path>C:\Users\Cavani\Desktop\labeling\Train_data\land_used\land_used148.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -21,18 +21,6 @@
 			<ymin>1</ymin>
 			<xmax>150</xmax>
 			<ymax>150</ymax>
-		</bndbox>
-	</object>
-	<object>
-		<name>Person</name>
-		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<difficult>0</difficult>
-		<bndbox>
-			<xmin>112</xmin>
-			<ymin>32</ymin>
-			<xmax>120</xmax>
-			<ymax>44</ymax>
 		</bndbox>
 	</object>
 </annotation>

@@ -1,7 +1,7 @@
 <annotation>
 	<folder>land_used</folder>
-	<filename>land_used250.jpg</filename>
-	<path>C:\Users\Cavani\Desktop\labeling\Train_data\land_used\land_used250.jpg</path>
+	<filename>land_used255.jpg</filename>
+	<path>C:\Users\Cavani\Desktop\labeling\Train_data\land_used\land_used255.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -12,15 +12,87 @@
 	</size>
 	<segmented>0</segmented>
 	<object>
-		<name>Cultivated</name>
+		<name>Person</name>
 		<pose>Unspecified</pose>
 		<truncated>1</truncated>
 		<difficult>0</difficult>
 		<bndbox>
 			<xmin>1</xmin>
-			<ymin>32</ymin>
+			<ymin>43</ymin>
+			<xmax>19</xmax>
+			<ymax>92</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Person</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>44</xmin>
+			<ymin>26</ymin>
+			<xmax>57</xmax>
+			<ymax>56</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Person</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>35</xmin>
+			<ymin>29</ymin>
+			<xmax>44</xmax>
+			<ymax>58</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Person</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>20</xmin>
+			<ymin>29</ymin>
+			<xmax>27</xmax>
+			<ymax>60</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Person</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>60</xmin>
+			<ymin>29</ymin>
+			<xmax>68</xmax>
+			<ymax>58</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Person</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>133</xmin>
+			<ymin>16</ymin>
 			<xmax>150</xmax>
-			<ymax>150</ymax>
+			<ymax>97</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Person</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>38</xmin>
+			<ymin>29</ymin>
+			<xmax>44</xmax>
+			<ymax>60</ymax>
 		</bndbox>
 	</object>
 </annotation>

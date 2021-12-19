@@ -1,7 +1,7 @@
 <annotation>
 	<folder>land_used</folder>
-	<filename>land_used325.jpg</filename>
-	<path>C:\Users\Cavani\Desktop\labeling\Train_data\land_used\land_used325.jpg</path>
+	<filename>land_used330.jpg</filename>
+	<path>C:\Users\Cavani\Desktop\labeling\Train_data\land_used\land_used330.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -18,9 +18,9 @@
 		<difficult>0</difficult>
 		<bndbox>
 			<xmin>1</xmin>
-			<ymin>29</ymin>
-			<xmax>150</xmax>
-			<ymax>149</ymax>
+			<ymin>1</ymin>
+			<xmax>148</xmax>
+			<ymax>135</ymax>
 		</bndbox>
 	</object>
 </annotation>

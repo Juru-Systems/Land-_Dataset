@@ -1,0 +1,38 @@
+<annotation>
+	<folder>land_usage_new</folder>
+	<filename>land used00158.jpg</filename>
+	<path>C:\Users\HP\Desktop\JuRu Systems\Land Usage\land_usage_new\land used00158.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>150</width>
+		<height>150</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Cultivation</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>12</xmin>
+			<ymin>35</ymin>
+			<xmax>148</xmax>
+			<ymax>150</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Person</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>81</xmin>
+			<ymin>12</ymin>
+			<xmax>129</xmax>
+			<ymax>135</ymax>
+		</bndbox>
+	</object>
+</annotation>
