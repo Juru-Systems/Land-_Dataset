@@ -5,13 +5,13 @@
 ### Folder Structure
 There are two folders in the dataset:
 1. Unused Land Images/
-    - [Images]/(Land_Dataset/tree/master/unused/images)
-    - [Labels]/(Land_Dataset/tree/master/unused/unused/labels)
+    - [Images](Land_Dataset/tree/master/unused/images)
+    - [Labels](Land_Dataset/tree/master/unused/unused/labels)
     - [Unlabeled]/(Land_Dataset/tree/master/unused/unused/unlabeled)
 2. Used Land Images/
-    - [Images]/(Land_Dataset/tree/master/unused/used/images)
-    - [Labels]/(Land_Dataset/tree/master/unused/used/labels)
-    - [Unlabeled]/(Land_Dataset/tree/master/unused/used/unlabeled)
+    - [Images](Land_Dataset/tree/master/unused/used/images)
+    - [Labels](Land_Dataset/tree/master/unused/used/labels)
+    - [Unlabeled](Land_Dataset/tree/master/unused/used/unlabeled)
 
 In addition to the above description, there is a structured JSON file containing the images paths and labels.
 
