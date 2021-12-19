@@ -4,14 +4,14 @@
 ## Usage
 ### Folder Structure
 There are two folders in the dataset:
-1. unused
-    - images
-    - labels
-    - unlabeled
-2. used
-    - images
-    - labels
-    - unlabeled
+1. Unused Land Images/
+    - [Images]/(unused/images)
+    - [Labels]/(unused/labels)
+    - [Unlabeled]/(unused/unlabeled)
+2. Used Land Images/
+    - [Images]/(used/images)
+    - [Labels]/(used/labels)
+    - [Unlabeled]/(used/unlabeled)
 
 In addition to the above description, there is a structured JSON file containing the images paths and labels.
 
