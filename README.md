@@ -7,7 +7,7 @@ There are two folders in the dataset:
 1. Unused Land Images/
     - [Images](Land_Dataset/tree/master/unused/images)
     - [Labels](Land_Dataset/tree/master/unused/unused/labels)
-    - [Unlabeled]/(Land_Dataset/tree/master/unused/unused/unlabeled)
+    - [Unlabeled](Land_Dataset/tree/master/unused/unused/unlabeled)
 2. Used Land Images/
     - [Images](Land_Dataset/tree/master/unused/used/images)
     - [Labels](Land_Dataset/tree/master/unused/used/labels)
