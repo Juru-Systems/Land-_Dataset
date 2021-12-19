@@ -5,6 +5,9 @@
 
 
 
-compiled by Janvier Niyitegeka, Edision Ngizwenayo & Arnaud Kayonga
+Compiled & reviewd by 
+Janvier Niyitegeka, @eng.january
+Edision Ngizwenayo: @cavani12345
+Arnaud Kayonga : @agent87
 
 Juru Systems © 2021.
