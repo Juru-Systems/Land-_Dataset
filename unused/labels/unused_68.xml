@@ -1,0 +1,38 @@
+<annotation>
+	<folder>unused_land</folder>
+	<filename>land_unused076.jpg</filename>
+	<path>C:\Users\HP\Desktop\JuRu Systems\Land Usage\Train_data\unused_land\land_unused076.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>150</width>
+		<height>150</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Uncultivated</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2</xmin>
+			<ymin>85</ymin>
+			<xmax>147</xmax>
+			<ymax>149</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Forest</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>5</xmin>
+			<ymin>4</ymin>
+			<xmax>145</xmax>
+			<ymax>91</ymax>
+		</bndbox>
+	</object>
+</annotation>
