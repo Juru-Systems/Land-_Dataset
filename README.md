@@ -26,6 +26,6 @@ In addition to the above description, there is a structured JSON file containing
 Compiled & reviewd by 
 Janvier Niyitegeka, @eng.january[@Eng.january](https://github.com/Eng-Janvier)\
 Edision Ngizwenayo: @cavani12345[@cavani12345](https://github.com/cavaniv12345)\
-Arnaud Kayonga : [@agent87](https://github.com/agent87)\
+Arnaud Kayonga : [@agent87](https://github.com/agent87)
 
 Juru Systems © 2021.
