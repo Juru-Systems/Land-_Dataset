@@ -8,8 +8,8 @@ import json
 
 # # Global variables
 
-import_dir = "content/Land_Dataset-main/base"
-export_dir = "/content/Land_Dataset-main/augmented"
+import_dir = r'/content/Land_Dataset-main/base/'
+export_dir = r'/content/Land_Dataset-main/augmented/'
 
 
 global dir
