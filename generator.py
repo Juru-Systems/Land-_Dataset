@@ -132,6 +132,8 @@ for folder in dir:
 
     dataset[str(folder)] = random.shuffle(dataset[str(folder)])
 
+print(dataset)
+
 def split_data(dataset, training_size, validation_size):
     training_dir = {}
     validation_dir = {}
@@ -146,13 +148,13 @@ def split_data(dataset, training_size, validation_size):
     return training_dir, validation_dir, test_dir
 #split dataset into training, validation, and test sets
 
-train, val, test = split_data(dataset, 0.7, 0.2)
+# train, val, test = split_data(dataset, 0.7, 0.2)
 
 #copy training data to train folder
-for folder in train:
-    for img in train[folder]:
-        print(img,'----', '/content/Land_Dataset-main/split/' + '/train/' + folder)
-        #copy2(img, dir[folder]['path'] + 'train/')
+# for folder in train:
+#     for img in train[folder]:
+#         print(img,'----', '/content/Land_Dataset-main/split/' + '/train/' + folder)
+#         #copy2(img, dir[folder]['path'] + 'train/')
 
 #copy training data to train folder
 # for folder in val:
