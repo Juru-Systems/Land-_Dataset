@@ -114,7 +114,7 @@ for folder in dir:
 
 
 #Save Directory Structure
-with open('../Land Usage Platform/Augmentation/directory.json', 'w') as fp:
+with open(r'/content/Land_Dataset-main/augmented/directory.json', 'w+') as fp:
     json.dump(dir, fp, sort_keys=True, indent=4)
 
 
