@@ -71,7 +71,6 @@ def high_brightness(image_path, export_dir, label):
     file_destination_path = export_dir +  destination_file_name
     
     cv2.imwrite(file_destination_path, brightincrease)
-    print(file_destination_path, " Created")
     return file_destination_path
 
 def low_brightness(image_path, export_dir, label):
@@ -129,7 +128,7 @@ dataset = {}
 for folder in dir:
     dataset[str(folder)] = []
     for img in os.listdir(dir[folder]['path'] + 'images/'):
-        dataset[folder].apped(dir[folder]['path'] + 'images/' + img)
+        dataset[folder].append(dir[folder]['path'] + 'images/' + img)
 
     dataset[str(folder)] = random.shuffle(dataset[str(folder)])
 
