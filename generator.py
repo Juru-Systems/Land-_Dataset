@@ -110,12 +110,12 @@ def sharpness(image_path, export_dir, label):
 # # Implementation
 for folder in dir:
     for img in dir[folder]['imgs']['originals']:
-        dir[folder]['imgs']['left_rotation'].append(rotation(img, 90, dir[folder]['path'], str(folder)))
-        dir[folder]['imgs']['right_rotation'].append(rotation(img, -90, dir[folder]['path'], str(folder)))
-        dir[folder]['imgs']['vertical_flip'].append(vertical_flip(img, dir[folder]['path'], str(folder)))
-        dir[folder]['imgs']['high_brightness'].append(high_brightness(img, dir[folder]['path'], str(folder)))
-        dir[folder]['imgs']['low_brightness'].append(low_brightness(img, dir[folder]['path'], str(folder)))
-        dir[folder]['imgs']['sharpness'].append(sharpness(img, dir[folder]['path'], str(folder)))
+        dir[folder]['imgs']['left_rotation'].append(rotation(img, 90, dir[folder]['path'] + 'images/', str(folder)))
+        dir[folder]['imgs']['right_rotation'].append(rotation(img, -90, dir[folder]['path'] + 'images/', str(folder)))
+        dir[folder]['imgs']['vertical_flip'].append(vertical_flip(img, dir[folder]['path'] + 'images/', str(folder)))
+        dir[folder]['imgs']['high_brightness'].append(high_brightness(img, dir[folder]['path'] + 'images/', str(folder)))
+        dir[folder]['imgs']['low_brightness'].append(low_brightness(img, dir[folder]['path'] + 'images/', str(folder)))
+        dir[folder]['imgs']['sharpness'].append(sharpness(img, dir[folder]['path'] + 'images/', str(folder)))
 
 
 #Save Directory Structure
