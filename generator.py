@@ -128,7 +128,7 @@ dataset = {}
 #Gather Dataset Structure & paths
 for folder in dir:
     dataset[str(folder)] = []
-    for img in random.shuffle(os.listdir(dir[folder]['path'] + 'images/')):
+    for img in os.listdir(dir[folder]['path'] + 'images/'):
         dataset[folder].apped(dir[folder]['path'] + 'images/' + img)
 
     dataset[str(folder)] = random.shuffle(dataset[str(folder)])
