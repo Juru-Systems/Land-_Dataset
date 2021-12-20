@@ -18,7 +18,7 @@ In addition to the above description, there is a structured JSON file containing
 #### Loading in notebook such Google Colab or Jupyter Notebook
 ```python
 !wget https://github.com/Juru-Systems/Land_Dataset/archive/refs/heads/main.zip
-!unzip main.zip -d dataset
+!unzip main.zip 
 ```
 
 ## Data Augmentation
