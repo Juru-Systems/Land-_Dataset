@@ -4,11 +4,11 @@
 ## Usage
 #### Folder Structure
 There are two folders in the dataset:
-1. Unused Land Images/
+1. Unused Land Images
     - [Images](Land_Dataset/tree/master/unused/images)
     - [Labels](Land_Dataset/tree/master/unused/unused/labels)
     - [Unlabeled](Land_Dataset/tree/master/unused/unused/unlabeled)
-2. Used Land Images/
+2. Used Land Images
     - [Images](Land_Dataset/tree/master/unused/used/images)
     - [Labels](Land_Dataset/tree/master/unused/used/labels)
     - [Unlabeled](Land_Dataset/tree/master/unused/used/unlabeled)
@@ -18,7 +18,7 @@ In addition to the above description, there is a structured JSON file containing
 #### Loading in notebook such Google Colab or Jupyter Notebook
 ```python
 !wget https://github.com/Juru-Systems/Land_Dataset/archive/refs/heads/main.zip
-!unzip main.zip
+!unzip main.zip -d dataset
 ```
 
 ## Data Augmentation
