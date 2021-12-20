@@ -21,7 +21,7 @@ for folder in os.listdir(import_dir):
         'path': import_dir + folder + '/',
         'imgs': {'originals' : glob.glob(import_dir + folder + "/images" + '/*.jpg'),
                  'left_rotation' : [],
-                 'righ_rotation' : [],
+                 'right_rotation' : [],
                  'vertical_flip' : [],
                  'high_brightness' : [],
                  'low_brightness' : [],
