@@ -18,11 +18,10 @@ dir = {}
 #loop through all the class folders
 for folder in os.listdir(import_dir):
     dir[str(folder)] = {
-        'path': folder + '/',
-        'imgs': {'originals' : glob.glob(import_dir + folder.lstrip("\\\\") + '/*.jpeg')}
+        'path': import_dir + folder + '/',
+        'imgs': {'originals' : glob.glob(import_dir + folder.lstrip("\\\\") + '/*.jpg')}
     }
 
-print(dir)
 # # Image Augmentation Functions
 # ## Rotations
 def rotation(image_path, angle, export_dir, label):
@@ -110,6 +109,7 @@ for folder in dir:
         dir[folder]['imgs']['increase_brightness'] = increase_brightness(img, export_dir + dir[folder]['path'], dir[folder])
         dir[folder]['imgs']['decrease_brightness'] = decrease_brightness(img, export_dir + dir[folder]['path'], dir[folder])
         dir[folder]['imgs']['sharpness'] = sharpness(img, export_dir + dir[folder]['path'], dir[folder])
+        print("Here")
 
 
 #Save Directory Structure
