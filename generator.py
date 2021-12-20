@@ -22,6 +22,8 @@ for folder in os.listdir(import_dir):
         'imgs': {'originals' : glob.glob(import_dir + folder.lstrip("\\\\") + '/*.jpg')}
     }
 
+
+
 # # Image Augmentation Functions
 # ## Rotations
 def rotation(image_path, angle, export_dir, label):
@@ -109,11 +111,10 @@ for folder in dir:
         dir[folder]['imgs']['increase_brightness'] = increase_brightness(img, export_dir + dir[folder]['path'], dir[folder])
         dir[folder]['imgs']['decrease_brightness'] = decrease_brightness(img, export_dir + dir[folder]['path'], dir[folder])
         dir[folder]['imgs']['sharpness'] = sharpness(img, export_dir + dir[folder]['path'], dir[folder])
-        print("Here")
 
 
 #Save Directory Structure
 with open('/content/Land_Dataset-main/augmented/directory.json', 'w+') as fp:
     json.dump(dir, fp, sort_keys=True, indent=4)
 
-
+print(dir)
