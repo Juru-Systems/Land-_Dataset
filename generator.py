@@ -19,7 +19,7 @@ dir = {}
 for folder in os.listdir(import_dir):
     dir[str(folder)] = {
         'path': import_dir + folder + '/',
-        'imgs': {'originals' : glob.glob(import_dir + folder.lstrip("\\\\") + '/*.jpg')}
+        'imgs': {'originals' : glob.glob(import_dir + folder + "/images" + '/*.jpg')}
     }
 
 
