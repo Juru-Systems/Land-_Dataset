@@ -19,7 +19,13 @@ dir = {}
 for folder in os.listdir(import_dir):
     dir[str(folder)] = {
         'path': import_dir + folder + '/',
-        'imgs': {'originals' : glob.glob(import_dir + folder + "/images" + '/*.jpg')}
+        'imgs': {'originals' : glob.glob(import_dir + folder + "/images" + '/*.jpg'),
+                 'left_rotation' : [],
+                 'righ_rotation' : [],
+                 'vertical_flip' : [],
+                 'high_brightness' : [],
+                 'low_brightness' : [],
+                 'sharpness' : []}
     }
 
 
@@ -55,7 +61,7 @@ def vertical_flip(image_path, export_dir, label):
 
 
 # ### High Brightness
-def increase_brightness(image_path, export_dir, label):
+def high_brightness(image_path, export_dir, label):
     image = cv2.imread(image_path)
     #Transformation algorithm
     bright = np.ones(image.shape , dtype="uint8") * 70
@@ -69,7 +75,7 @@ def increase_brightness(image_path, export_dir, label):
     print(file_destination_path, " Created")
     return file_destination_path
 
-def decrease_brightness(image_path, export_dir, label):
+def low_brightness(image_path, export_dir, label):
     image = cv2.imread(image_path)
     #Transformation algorithm
     bright = np.ones(image.shape , dtype="uint8") * 70
@@ -107,8 +113,8 @@ for folder in dir:
         dir[folder]['imgs']['left_rotation'].append(rotation(img, 90, dir[folder]['path'], str(folder)))
         dir[folder]['imgs']['right_rotation'].append(rotation(img, -90, dir[folder]['path'], str(folder)))
         dir[folder]['imgs']['vertical_flip'].append(vertical_flip(img, dir[folder]['path'], str(folder)))
-        dir[folder]['imgs']['increase_brightness'].append(increase_brightness(img, dir[folder]['path'], str(folder)))
-        dir[folder]['imgs']['decrease_brightness'].append(decrease_brightness(img, dir[folder]['path'], str(folder)))
+        dir[folder]['imgs']['high_brightness'].append(high_brightness(img, dir[folder]['path'], str(folder)))
+        dir[folder]['imgs']['low_brightness'].append(low_brightness(img, dir[folder]['path'], str(folder)))
         dir[folder]['imgs']['sharpness'].append(sharpness(img, dir[folder]['path'], str(folder)))
 
 
