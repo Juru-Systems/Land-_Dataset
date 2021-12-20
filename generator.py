@@ -1,11 +1,10 @@
-# %%
-from shutil import copyfile,copy2
-import glob, os
+import getopt
+from shutil import copy2
+import glob, os, sys
 import cv2
 import numpy as np
-from PIL import Image
 import json
-
+import random
 # # Global variables
 
 import_dir = '/content/Land_Dataset-main/base/'
@@ -122,4 +121,53 @@ for folder in dir:
 with open('/content/Land_Dataset-main/augmented/directory.json', 'w+') as fp:
     json.dump(dir, fp, sort_keys=True, indent=4)
 
-print(dir)
+
+dataset = {}
+
+training_dir = {}
+validation_dir = {}
+test_dir = {}
+
+#Gather Dataset Structure & paths
+for folder in dir:
+    dataset[str(folder)] = []
+    for img in random.shuffle(os.listdir(dir[folder]['path'] + 'images/')):
+        dataset[folder].apped(dir[folder]['path'] + 'images/' + img)
+
+    dataset[str(folder)] = random.shuffle(dataset[str(folder)])
+
+#split dataset into training, validation, and test sets
+training_dir = dataset[:int(len(dataset) * 0.7)]
+validation_dir = dataset[int(len(dataset) * 0.7):int(len(dataset) * 0.9)]
+test_dir = dataset[int(len(dataset) * 0.9):]
+
+
+
+
+# argumentList = sys.argv[1:]
+ 
+# # Options
+# options = "hmo:"
+ 
+# # Long options
+# long_options = ["help", "shuffle", "ratio"]
+ 
+# try:
+#     # Parsing argument
+#     arguments, values = getopt.getopt(argumentList, options, long_options)
+     
+#     # checking each argument
+#     for currentArgument, currentValue in arguments:
+ 
+#         if currentArgument in ("-h", "--help"):
+#             print ("Displaying Help")
+             
+#         elif currentArgument in ("-s", "--Shuffle"):
+#             print ("Displaying file_name:", sys.argv[0])
+             
+#         elif currentArgument in ("-r", "--ratio"):
+#             print (("Enabling special output mode (% s)") % (currentValue))
+             
+# except getopt.error as err:
+    # output error, and return with an error code
+    print (str(err))
