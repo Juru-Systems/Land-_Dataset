@@ -109,7 +109,7 @@ for folder in dir:
         dir[folder]['imgs']['vertical_flip'].append(vertical_flip(img, dir[folder]['path'], str(folder)))
         dir[folder]['imgs']['increase_brightness'].append(increase_brightness(img, dir[folder]['path'], str(folder)))
         dir[folder]['imgs']['decrease_brightness'].append(decrease_brightness(img, dir[folder]['path'], str(folder)))
-        dir[folder]['imgs']['sharpness'].append(sharpness(img, dir[folder]['path'], str(folder))))
+        dir[folder]['imgs']['sharpness'].append(sharpness(img, dir[folder]['path'], str(folder)))
 
 
 #Save Directory Structure
