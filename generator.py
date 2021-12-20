@@ -8,8 +8,8 @@ import json
 
 # # Global variables
 
-import_dir = r'/content/Land_Dataset-main/base/'
-export_dir = r'/content/Land_Dataset-main/augmented/'
+import_dir = '/content/Land_Dataset-main/base/'
+export_dir = '/content/Land_Dataset-main/augmented/'
 
 
 global dir
@@ -22,8 +22,7 @@ for folder in os.listdir(import_dir):
         'imgs': {'originals' : glob.glob(import_dir + folder.lstrip("\\\\") + '/*.jpeg')}
     }
 
-
-
+print(dir)
 # # Image Augmentation Functions
 # ## Rotations
 def rotation(image_path, angle, export_dir, label):
@@ -114,7 +113,7 @@ for folder in dir:
 
 
 #Save Directory Structure
-with open(r'/content/Land_Dataset-main/augmented/directory.json', 'w+') as fp:
+with open('/content/Land_Dataset-main/augmented/directory.json', 'w+') as fp:
     json.dump(dir, fp, sort_keys=True, indent=4)
 
 
