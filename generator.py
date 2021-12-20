@@ -105,12 +105,12 @@ def sharpness(image_path, export_dir, label):
 # # Implementation
 for folder in dir:
     for img in dir[folder]['imgs']['originals']:
-        dir[folder]['imgs']['left_rotation'] = rotation(img, 90, export_dir + dir[folder]['path'], dir[folder])
-        dir[folder]['imgs']['right_rotation'] = rotation(img, -90, export_dir + dir[folder]['path'], dir[folder])
-        dir[folder]['imgs']['vertical_flip'] = vertical_flip(img, export_dir + dir[folder]['path'], dir[folder])
-        dir[folder]['imgs']['increase_brightness'] = increase_brightness(img, export_dir + dir[folder]['path'], dir[folder])
-        dir[folder]['imgs']['decrease_brightness'] = decrease_brightness(img, export_dir + dir[folder]['path'], dir[folder])
-        dir[folder]['imgs']['sharpness'] = sharpness(img, export_dir + dir[folder]['path'], dir[folder])
+        dir[folder]['imgs']['left_rotation'] = rotation(img, 90, dir[folder]['path'], dir[folder])
+        dir[folder]['imgs']['right_rotation'] = rotation(img, -90, dir[folder]['path'], dir[folder])
+        dir[folder]['imgs']['vertical_flip'] = vertical_flip(img, dir[folder]['path'], dir[folder])
+        dir[folder]['imgs']['increase_brightness'] = increase_brightness(img, dir[folder]['path'], dir[folder])
+        dir[folder]['imgs']['decrease_brightness'] = decrease_brightness(img, dir[folder]['path'], dir[folder])
+        dir[folder]['imgs']['sharpness'] = sharpness(img, dir[folder]['path'], dir[folder])
 
 
 #Save Directory Structure
