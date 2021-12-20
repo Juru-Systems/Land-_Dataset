@@ -69,7 +69,6 @@ def increase_brightness(image_path, export_dir, label):
     print(file_destination_path, " Created")
     return file_destination_path
 
-# %%
 def decrease_brightness(image_path, export_dir, label):
     image = cv2.imread(image_path)
     #Transformation algorithm
@@ -105,12 +104,12 @@ def sharpness(image_path, export_dir, label):
 # # Implementation
 for folder in dir:
     for img in dir[folder]['imgs']['originals']:
-        dir[folder]['imgs']['left_rotation'] = rotation(img, 90, dir[folder]['path'], dir[folder])
-        dir[folder]['imgs']['right_rotation'] = rotation(img, -90, dir[folder]['path'], dir[folder])
-        dir[folder]['imgs']['vertical_flip'] = vertical_flip(img, dir[folder]['path'], dir[folder])
-        dir[folder]['imgs']['increase_brightness'] = increase_brightness(img, dir[folder]['path'], dir[folder])
-        dir[folder]['imgs']['decrease_brightness'] = decrease_brightness(img, dir[folder]['path'], dir[folder])
-        dir[folder]['imgs']['sharpness'] = sharpness(img, dir[folder]['path'], dir[folder])
+        dir[folder]['imgs']['left_rotation'] = rotation(img, 90, dir[folder]['path'], str(folder))
+        dir[folder]['imgs']['right_rotation'] = rotation(img, -90, dir[folder]['path'], str(folder))
+        dir[folder]['imgs']['vertical_flip'] = vertical_flip(img, dir[folder]['path'], str(folder))
+        dir[folder]['imgs']['increase_brightness'] = increase_brightness(img, dir[folder]['path'], str(folder))
+        dir[folder]['imgs']['decrease_brightness'] = decrease_brightness(img, dir[folder]['path'], str(folder))
+        dir[folder]['imgs']['sharpness'] = sharpness(img, dir[folder]['path'], str(folder))
 
 
 #Save Directory Structure
