@@ -1,5 +1,5 @@
 import getopt
-from shutil import copy2
+from shutil import copy2, copyfile
 import glob, os, sys
 import cv2
 import numpy as np
@@ -124,9 +124,6 @@ with open('/content/Land_Dataset-main/augmented/directory.json', 'w+') as fp:
 
 dataset = {}
 
-training_dir = {}
-validation_dir = {}
-test_dir = {}
 
 #Gather Dataset Structure & paths
 for folder in dir:
@@ -136,38 +133,34 @@ for folder in dir:
 
     dataset[str(folder)] = random.shuffle(dataset[str(folder)])
 
+def split_data(dataset, training_size, validation_size):
+    training_dir = {}
+    validation_dir = {}
+    test_dir = {}
+    for folder in dataset:
+        #print(len(dataset[folder]))
+        #print(int(int(len(dataset[folder]))*training_size))
+        training_dir[folder] = dataset[folder][:int(int(len(dataset[folder]))* training_size)]
+        test_dir[folder] = dataset[folder][int(int(len(dataset[folder]))* training_size): int(int(len(dataset[folder]))*training_size) + int(int(len(folder))*validation_size)]
+        validation_dir[folder] = dataset[folder][int(int(len(dataset[folder]))*training_size) + int(int(len(folder))*validation_size):]
+
+    return training_dir, validation_dir, test_dir
 #split dataset into training, validation, and test sets
-training_dir = dataset[:int(len(dataset) * 0.7)]
-validation_dir = dataset[int(len(dataset) * 0.7):int(len(dataset) * 0.9)]
-test_dir = dataset[int(len(dataset) * 0.9):]
 
+train, val, test = split_data(dataset, 0.7, 0.2)
 
+#copy training data to train folder
+for folder in train:
+    for img in train[folder]:
+        print(img,'----', '/content/Land_Dataset-main/split/' + '/train/' + folder)
+        #copy2(img, dir[folder]['path'] + 'train/')
 
+#copy training data to train folder
+# for folder in val:
+#     for img in val[folder]:
+#         copy2(img, dir[folder]['path'] + 'train/')
 
-# argumentList = sys.argv[1:]
- 
-# # Options
-# options = "hmo:"
- 
-# # Long options
-# long_options = ["help", "shuffle", "ratio"]
- 
-# try:
-#     # Parsing argument
-#     arguments, values = getopt.getopt(argumentList, options, long_options)
-     
-#     # checking each argument
-#     for currentArgument, currentValue in arguments:
- 
-#         if currentArgument in ("-h", "--help"):
-#             print ("Displaying Help")
-             
-#         elif currentArgument in ("-s", "--Shuffle"):
-#             print ("Displaying file_name:", sys.argv[0])
-             
-#         elif currentArgument in ("-r", "--ratio"):
-#             print (("Enabling special output mode (% s)") % (currentValue))
-             
-# except getopt.error as err:
-    # output error, and return with an error code
-    print (str(err))
+# #copy training data to train folder
+# for folder in test:
+#     for img in test[folder]:
+#         copy2(img, dir[folder]['path'] + 'train/')
