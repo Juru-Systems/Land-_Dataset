@@ -19,6 +19,8 @@ In addition to the above description, there is a structured JSON file containing
 ```python
 !wget https://github.com/Juru-Systems/Land_Dataset/archive/refs/heads/main.zip
 !unzip main.zip 
+!pip install -r /content/Land_Dataset-main/requirements.txt
+
 ```
 
 ## Data Augmentation
