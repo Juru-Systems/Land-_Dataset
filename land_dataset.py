@@ -1,4 +1,4 @@
-from generator import generate
+from .generator import generate
 import cv2
 import random
 import os
@@ -92,8 +92,8 @@ def to_split_folder(folder_path, img_path_dict, ratio, augment_train=1, augment_
     return tree
 
 class compile:
-    path = 'colab/'
-    temp_file = 'temp/'
+    path = 'Land_Dataset/colab/'
+    temp_file = 'Land_Dataset/temp/'
     def __init__(self, class_encoding, ratio=[0.7,.2,.1], equal_ratio_to_healthy=False, shuffle=True, augment_train=1, augment_val=0, augment_test=0, random_file_name=True, ):
         self.dataset_dir = fetch_imgs_path(self.path, class_encoding, equal_ratio_to_healthy, shuffle)
         #to split_folders
